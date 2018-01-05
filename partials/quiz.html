@@ -1,0 +1,71 @@
+<div ng-controller="quizCtrl as quiz">
+
+    <div ng-show="quiz.up==true">
+
+        <div class="md-whiteframe-3dp md-block" style="position:relative;margin-bottom:10px;color:black;background-color:white;font-size:36px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;width:100%">
+            <center>
+                LEARNER'S QUIZ
+            </center>
+        </div>
+
+
+        <div>
+            <div layout="row" layout-xs="column">
+                <div flex-gt-xs="50">
+
+                    <md-card>
+                        <md-card-title>
+                            <md-card-title-text>
+                                <h3 class="md-headline">Q. What is the signal, as shown in the image is used for? </h3>
+
+                            </md-card-title-text>
+                        </md-card-title>
+                        <md-card-content layout="row">
+
+                            <img src="img/bimg1.jpg" class="md-media-xl card-media">
+                            <md-card-actions layout="column">
+                                <md-button class="md-raised">aaaaaaaaaaaaaaaaaa</md-button>
+                                <md-button class="md-raised">1</md-button>
+                                <md-button class="md-raised">1</md-button>
+                                <md-button class="md-raised">1</md-button>
+
+                            </md-card-actions>
+                        </md-card-content>
+                    </md-card>
+                </div>
+
+
+                <div flex-gt-xs="50" layout="column" layout-align="center center">
+
+                    <div class="md-whiteframe-4dp" style="background-color:white">
+
+                        <span style="font-size:20px;padding-left:50px;padding-right:50px">Answer Counter{{}}</span>
+
+                    </div>
+                    <md-button class="md-fab " style="background-color:rgb(26, 170, 26);color:white">
+                        34
+                    </md-button>
+                </div>
+            </div>
+
+        </div>
+        <div layout="row" layout-align="center center">
+            <md-button class="md-raised md-block" style="background-color:rgb(26,170,26);color:white">Home Screen</md-button>
+            <md-button class="md-raised md-block " style="background-color:crimson;color:white">Reset</md-button>
+        </div>
+
+    </div>
+    <div ng-show="quiz.up==false" style="height:100vh">
+        <div class="cs-loader">
+            <div class="cs-loader-inner">
+                <label>	●</label>
+                <label>	●</label>
+                <label>	●</label>
+                <label>	●</label>
+                <label>	●</label>
+                <label>	●</label>
+            </div>
+        </div>
+
+    </div>
+</div>

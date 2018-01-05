@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project</title>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-messages/angular-messages.min.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.min.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+    <script src="node_modules/firebase/firebase.js"></script>
+    <script src="node_modules/angularfire/dist/angularfire.min.js"></script>
+    <script src="app.js"></script>
+
+    <link rel="stylesheet" href="/stylesheet/styles.css">
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCevVI7fhHh5rUgcVmhrJV6v6sdO8GKDvg",
+            authDomain: "testapp-1f3d4.firebaseapp.com",
+            databaseURL: "https://testapp-1f3d4.firebaseio.com",
+            projectId: "testapp-1f3d4",
+            storageBucket: "testapp-1f3d4.appspot.com",
+            messagingSenderId: "217840822453"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body ng-app="application">
+
+    <div layout="column" layout-fill>
+
+        <md-toolbar style="background-color:rgb(3, 190, 3)" class="md-medium-tall md-whiteframe-8dp" ng-controller="toolbarCtrl as tool">
+
+
+
+            <div id=" buttons" class="md-toolbar-tools" style="margin-top:25px">
+                <div style="font-size:34px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:whitesmoke">
+                    <md-icon md-svg-src="/icons/drive_eta.svg"></md-icon>Traffic Rules Simulator</div>
+
+
+
+                <md-button class="md-raised" style="color:white;position:absolute;right:0%;background-color:rgb(3, 150, 3)" ng-click="tool.clicked3()">
+                    <md-icon aria-label="developers" md-svg-src="icons/developers.svg"></md-icon>Developers</md-button>
+                <md-button class="md-raised" style="color:white;position:absolute;right:150px;;background-color:rgb(3, 150, 3)" ng-click="tool.clicked2()">
+                    <md-icon aria-label="games" md-svg-src="icons/games.svg"></md-icon> Games</md-button>
+                <md-button class="md-raised" style="color:white;position:absolute;right:280px;background-color:rgb(3, 150, 3)" ng-click="tool.clicked1()">
+                    <md-icon aria-label="home" md-svg-src="icons/home.svg"></md-icon>Home</md-button>
+
+            </div>
+
+        </md-toolbar>
+
+
+        <md-content flex style="background-color:rgb(177, 238, 177)">
+
+            <ng-view></ng-view>
+
+        </md-content>
+    </div>
+
+
+</body>
+
+</html>
