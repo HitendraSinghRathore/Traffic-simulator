@@ -1,0 +1,21 @@
+{
+  "name": "traffic-simulator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.8",
+    "angular-animate": "^1.7.8",
+    "angular-aria": "^1.7.8",
+    "angular-material": "^1.1.18",
+    "angular-messages": "^1.7.8",
+    "angular-route": "^1.7.8",
+    "angularfire": "^2.3.0",
+    "firebase": "^5.9.3"
+  }
+}
